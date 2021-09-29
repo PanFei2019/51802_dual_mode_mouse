@@ -1,0 +1,249 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: ¦ÌVision V5.27.0.0
+Copyright (C) 2018 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: 123 Felix, 123, LIC=HF830-B2HML-QIE5M-X3JFE-CPL1N-QBZA0
+ 
+Tool Versions:
+Toolchain:       MDK-ARM Professional  Version: 5.27.0.0
+Toolchain Path:  C:\Keil_v5_27\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.06 update 6 (build 750)
+Assembler:       Armasm.exe V5.06 update 6 (build 750)
+Linker/Locator:  ArmLink.exe V5.06 update 6 (build 750)
+Library Manager: ArmAr.exe V5.06 update 6 (build 750)
+Hex Converter:   FromElf.exe V5.06 update 6 (build 750)
+CPU DLL:         SARMCM3.DLL V5.27.0.0
+Dialog DLL:      DARMCM1.DLL V1.19.2.0
+Target DLL:      Segger\JL2CM3.dll V2.99.34.0
+Dialog DLL:      TARMCM1.DLL V1.14.1.0
+ 
+<h2>Project:</h2>
+I:\51802\dual_mode_mouse\nRF5_SDK_12.3.0_d7731ad\nRF5_SDK_12.3.0_d7731ad\examples\ble_peripheral\ble_app_hids_mouse\pca10028\s130\arm5_no_packs\ble_app_hids_mouse_pca10028_s130.uvprojx
+Project File Date:  09/25/2021
+
+<h2>Output:</h2>
+*** Using Compiler 'V5.06 update 6 (build 750)', folder: 'C:\Keil_v5_27\ARM\ARMCC\Bin'
+Build target 'nrf51422_xxac'
+compiling main.c...
+..\..\..\PTP_touchpad.h(4): warning:  #1295-D: Deprecated declaration read_sensor_data - give arg types
+  void read_sensor_data();
+..\..\..\main.c(789): warning:  #188-D: enumerated type mixed with another type
+  				nrf_gpio_cfg_input(QDEC_CONFIG_PIO_A, GPIO_PIN_CNF_PULL_Pullup);
+..\..\..\main.c(790): warning:  #188-D: enumerated type mixed with another type
+  				nrf_gpio_cfg_input(QDEC_CONFIG_PIO_B, GPIO_PIN_CNF_PULL_Pullup);
+..\..\..\main.c(901): warning:  #188-D: enumerated type mixed with another type
+  									nrf_gpio_cfg_input(QDEC_CONFIG_PIO_A, GPIO_PIN_CNF_PULL_Pullup);
+..\..\..\main.c(902): warning:  #188-D: enumerated type mixed with another type
+  									nrf_gpio_cfg_input(QDEC_CONFIG_PIO_B, GPIO_PIN_CNF_PULL_Pullup);
+..\..\..\main.c(754): warning:  #177-D: variable "ret"  was declared but never referenced
+  		ret_code_t ret;
+..\..\..\main.c(1380): warning:  #188-D: enumerated type mixed with another type
+  							nrf_gpio_cfg_input(QDEC_CONFIG_PIO_A, GPIO_PIN_CNF_PULL_Pullup);
+..\..\..\main.c(1381): warning:  #188-D: enumerated type mixed with another type
+  							nrf_gpio_cfg_input(QDEC_CONFIG_PIO_B, GPIO_PIN_CNF_PULL_Pullup);
+..\..\..\main.c(1078): warning:  #177-D: variable "i"  was declared but never referenced
+  		uint8_t i = 0;
+..\..\..\main.c(1079): warning:  #177-D: variable "gap_conn_params"  was declared but never referenced
+  		ble_gap_conn_params_t   gap_conn_params;
+..\..\..\main.c(2613): warning:  #177-D: variable "motion_x"  was declared but never referenced
+  		int16_t motion_x, motion_y;
+..\..\..\main.c(2613): warning:  #177-D: variable "motion_y"  was declared but never referenced
+  		int16_t motion_x, motion_y;
+..\..\..\main.c(3207): warning:  #177-D: variable "my_counter"  was declared but never referenced
+  	static uint8_t my_counter = 0;
+..\..\..\main.c(3320): warning:  #177-D: variable "gap_conn_params"  was declared but never referenced
+  		ble_gap_conn_params_t   gap_conn_params;
+..\..\..\main.c(3321): warning:  #177-D: variable "current_peer_id"  was declared but never referenced
+  		pm_peer_id_t current_peer_id = 0;
+..\..\..\main.c(4213): warning:  #111-D: statement is unreachable
+  					break;
+..\..\..\main.c(4217): warning:  #111-D: statement is unreachable
+  					break;
+..\..\..\main.c(4221): warning:  #111-D: statement is unreachable
+  					break;
+..\..\..\main.c(4225): warning:  #111-D: statement is unreachable
+  					break;
+..\..\..\main.c(4230): warning:  #111-D: statement is unreachable
+  					break;
+..\..\..\main.c(4235): warning:  #111-D: statement is unreachable
+  					break;
+..\..\..\main.c(4426): warning:  #177-D: variable "work_mode_addr"  was declared but never referenced
+  	uint32_t * work_mode_addr;
+..\..\..\main.c(4568): warning:  #940-D: missing return statement at end of non-void function "modify_base_address_0" 
+  }
+..\..\..\main.c(4576): warning:  #940-D: missing return statement at end of non-void function "modify_base_address_0_encrypt" 
+  }
+..\..\..\main.c(4633): warning:  #177-D: variable "err_code"  was declared but never referenced
+  	uint32_t err_code;
+..\..\..\main.c(4650): warning:  #177-D: variable "err_code"  was declared but never referenced
+  	uint32_t err_code;
+..\..\..\main.c(4887): warning:  #177-D: variable "err_code"  was declared but never referenced
+  	uint32_t err_code;
+..\..\..\main.c(5422): warning:  #188-D: enumerated type mixed with another type
+  			nrf_gpio_cfg_input(1, GPIO_PIN_CNF_PULL_Pullup);
+..\..\..\main.c(5423): warning:  #188-D: enumerated type mixed with another type
+  			nrf_gpio_cfg_input(17, GPIO_PIN_CNF_PULL_Pullup);
+..\..\..\main.c(5064): warning:  #177-D: variable "BDaddrEncryptData"  was declared but never referenced
+  	uint8_t BDaddrEncryptData[6];
+..\..\..\main.c(5065): warning:  #177-D: variable "BDaddrData"  was declared but never referenced
+  	uint8_t BDaddrData[6];
+..\..\..\main.c(5066): warning:  #177-D: variable "motion_x"  was declared but never referenced
+  	int16_t motion_x, motion_y;
+..\..\..\main.c(5066): warning:  #177-D: variable "motion_y"  was declared but never referenced
+  	int16_t motion_x, motion_y;
+..\..\..\main.c(5069): warning:  #177-D: variable "ResetReason"  was declared but never referenced
+  	uint32_t ResetReason = 0;
+..\..\..\main.c(5071): warning:  #177-D: variable "time_ms"  was declared but never referenced
+  	uint32_t time_ms = 8; //Time(in miliseconds) between consecutive compare events.
+..\..\..\main.c(5075): warning:  #177-D: variable "time_ticks"  was declared but never referenced
+  	uint32_t time_ticks;
+..\..\..\main.c(5076): warning:  #177-D: variable "hop_frequency_timeout"  was declared but never referenced
+  	uint32_t hop_frequency_timeout = 0;
+..\..\..\main.c(5078): warning:  #177-D: variable "flash_addr"  was declared but never referenced
+  	uint32_t * flash_addr;
+..\..\..\main.c(5085): warning:  #177-D: variable "my_temp"  was declared but never referenced
+  	uint8_t my_temp = 0;
+..\..\..\main.c(5086): warning:  #177-D: variable "k"  was declared but never referenced
+  	uint8_t k = 0;
+..\..\..\main.c(5087): warning:  #177-D: variable "n"  was declared but never referenced
+  	uint8_t n = 0;
+..\..\..\main.c(5885): warning:  #188-D: enumerated type mixed with another type
+  							button_event_handler(17, GPIOTE_CONFIG_POLARITY_Toggle);
+..\..\..\main.c(5897): warning:  #188-D: enumerated type mixed with another type
+  								button_event_handler(17, GPIOTE_CONFIG_POLARITY_Toggle);
+..\..\..\main.c(5907): warning:  #188-D: enumerated type mixed with another type
+  								button_event_handler(17, GPIOTE_CONFIG_POLARITY_Toggle);
+..\..\..\main.c(5492): warning:  #177-D: variable "BDaddrEncryptData"  was declared but never referenced
+  	uint8_t BDaddrEncryptData[6];
+..\..\..\main.c(5493): warning:  #177-D: variable "BDaddrData"  was declared but never referenced
+  	uint8_t BDaddrData[6];
+..\..\..\main.c(5495): warning:  #177-D: variable "i"  was declared but never referenced
+  	uint16_t i = 0;
+..\..\..\main.c(5497): warning:  #177-D: variable "ResetReason"  was declared but never referenced
+  	uint32_t ResetReason = 0;
+..\..\..\main.c(5499): warning:  #177-D: variable "time_ms"  was declared but never referenced
+  	uint32_t time_ms = 8; //Time(in miliseconds) between consecutive compare events.
+..\..\..\main.c(5503): warning:  #177-D: variable "time_ticks"  was declared but never referenced
+  	uint32_t time_ticks;
+..\..\..\main.c(5508): warning:  #177-D: variable "pairing_loop_count"  was declared but never referenced
+  	uint16_t pairing_loop_count = 0;
+..\..\..\main.c(5509): warning:  #177-D: variable "page_loop_count"  was declared but never referenced
+  	uint16_t page_loop_count = 0;                     //0-749 -10dbm, 750-1499, -5dbm, 1500-2250 0dbm; 750*4ms=3s, 3000*3ms=9s
+..\..\..\main.c(5511): warning:  #177-D: variable "m_TX_attempt"  was declared but never referenced
+  	uint8_t m_TX_attempt = 0;
+..\..\..\main.c(6412): warning:  #188-D: enumerated type mixed with another type
+  	nrf_gpio_cfg_input(28, GPIO_PIN_CNF_PULL_Pullup);
+..\..\..\main.c(6413): warning:  #188-D: enumerated type mixed with another type
+  	nrf_gpio_cfg_input(29, GPIO_PIN_CNF_PULL_Pullup);
+..\..\..\main.c(6464): warning:  #188-D: enumerated type mixed with another type
+  	nrf_gpio_cfg_input(QDEC_CONFIG_PIO_A, GPIO_PIN_CNF_PULL_Pulldown);
+..\..\..\main.c(6465): warning:  #188-D: enumerated type mixed with another type
+  	nrf_gpio_cfg_input(QDEC_CONFIG_PIO_B, GPIO_PIN_CNF_PULL_Pulldown);
+..\..\..\main.c(6475): warning:  #188-D: enumerated type mixed with another type
+  	nrf_gpio_cfg_input(QDEC_CONFIG_PIO_A, GPIO_PIN_CNF_PULL_Pullup);
+..\..\..\main.c(6476): warning:  #188-D: enumerated type mixed with another type
+  	nrf_gpio_cfg_input(QDEC_CONFIG_PIO_B, GPIO_PIN_CNF_PULL_Pullup);
+..\..\..\main.c(6488): warning:  #188-D: enumerated type mixed with another type
+  		nrf_drv_spi_config_t spi_config = NRF_DRV_SPI_DEFAULT_CONFIG;
+..\..\..\main.c(6495): warning:  #188-D: enumerated type mixed with another type
+  			spi_config.frequency = (0x40000000UL);//4M
+..\..\..\main.c(6542): warning:  #188-D: enumerated type mixed with another type
+  		nrf_gpio_cfg_input(QDEC_CONFIG_PIO_A, GPIO_PIN_CNF_PULL_Pullup);
+..\..\..\main.c(6543): warning:  #188-D: enumerated type mixed with another type
+  		nrf_gpio_cfg_input(QDEC_CONFIG_PIO_B, GPIO_PIN_CNF_PULL_Pullup);
+..\..\..\main.c(6917): warning:  #188-D: enumerated type mixed with another type
+  						nrf_drv_spi_config_t spi_config = NRF_DRV_SPI_DEFAULT_CONFIG;
+..\..\..\main.c(6922): warning:  #188-D: enumerated type mixed with another type
+  						spi_config.frequency = (0x40000000UL);//4M
+..\..\..\main.c(6563): warning:  #177-D: variable "work_mode_addr_1"  was declared but never referenced
+  	uint32_t * work_mode_addr_1;
+..\..\..\main.c(6566): warning:  #177-D: variable "BDaddrData"  was declared but never referenced
+  	uint8_t BDaddrData[6];
+..\..\..\main.c(6567): warning:  #177-D: variable "motion_x"  was declared but never referenced
+  	int16_t motion_x, motion_y;
+..\..\..\main.c(6567): warning:  #177-D: variable "motion_y"  was declared but never referenced
+  	int16_t motion_x, motion_y;
+..\..\..\main.c(6568): warning:  #177-D: variable "i"  was declared but never referenced
+  	uint16_t i = 0;
+..\..\..\main.c(6572): warning:  #177-D: variable "time_ms"  was declared but never referenced
+  	uint32_t time_ms = 8; //Time(in miliseconds) between consecutive compare events.
+..\..\..\main.c(6576): warning:  #177-D: variable "time_ticks"  was declared but never referenced
+  	uint32_t time_ticks;
+..\..\..\main.c(6577): warning:  #177-D: variable "time_for_sleep_ms"  was declared but never referenced
+  	uint32_t time_for_sleep_ms = 1000; //Time(in miliseconds) between consecutive compare events.
+..\..\..\main.c(6578): warning:  #177-D: variable "time_for_sleep_ticks"  was declared but never referenced
+  	uint32_t time_for_sleep_ticks;
+..\..\..\main.c(6579): warning:  #177-D: variable "hop_frequency_timeout"  was declared but never referenced
+  	uint32_t hop_frequency_timeout = 0;
+..\..\..\main.c(6581): warning:  #177-D: variable "flash_addr"  was declared but never referenced
+  	uint32_t * flash_addr;
+..\..\..\main.c(6582): warning:  #177-D: variable "flash_addr_2"  was declared but never referenced
+  	uint32_t * flash_addr_2;
+..\..\..\main.c(6584): warning:  #177-D: variable "pairing_loop_count"  was declared but never referenced
+  	uint16_t pairing_loop_count = 0;
+..\..\..\main.c(6585): warning:  #177-D: variable "page_loop_count"  was declared but never referenced
+  	uint16_t page_loop_count = 0;                     //0-749 -10dbm, 750-1499, -5dbm, 1500-2250 0dbm; 750*4ms=3s, 3000*3ms=9s
+..\..\..\main.c(6586): warning:  #177-D: variable "page_common_count"  was declared but never referenced
+  	uint8_t page_common_count = 0;
+..\..\..\main.c(6587): warning:  #177-D: variable "m_TX_attempt"  was declared but never referenced
+  	uint8_t m_TX_attempt = 0;
+..\..\..\main.c(6589): warning:  #177-D: variable "my_temp"  was declared but never referenced
+  	uint8_t my_temp = 0;
+..\..\..\main.c(6590): warning:  #177-D: variable "k"  was declared but never referenced
+  	uint8_t k = 0;
+..\..\..\main.c(6591): warning:  #177-D: variable "n"  was declared but never referenced
+  	uint8_t n = 0;
+..\..\..\main.c(6592): warning:  #177-D: variable "auth_cnt"  was declared but never referenced
+  	uint8_t auth_cnt = 0;
+..\..\..\main.c(6595): warning:  #177-D: variable "hop_frequency_mode"  was declared but never referenced
+  	bool hop_frequency_mode = true;
+..\..\..\main.c(634): warning:  #550-D: variable "m_is_wl_changed"  was set but never used
+  static bool           m_is_wl_changed;                                      /**< Indicates if the whitelist has been changed since last time it has been updated in the Peer Manager. */
+..\..\..\main.c(2549): warning:  #177-D: function "sleep_mode_enter"  was declared but never referenced
+  static void sleep_mode_enter(void)
+..\..\..\main.c(2533): warning:  #177-D: function "timers_start"  was declared but never referenced
+  static void timers_start(void)
+..\..\..\main.c(4929): warning:  #177-D: function "lfclk_config"  was declared but never referenced
+  static void lfclk_config(void)
+..\..\..\main.c(4939): warning:  #177-D: function "rtc_config"  was declared but never referenced
+  static void rtc_config(void)
+..\..\..\main.c: 91 warnings, 0 errors
+linking...
+Program Size: Code=71032 RO-data=1276 RW-data=924 ZI-data=6692  
+FromELF: creating hex file...
+".\_build\nrf51822_xxac.axf" - 0 Error(s), 91 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: ARM
+                http://www.keil.com/pack/ARM.CMSIS.4.5.0.pack
+                ARM.CMSIS.4.5.0
+                CMSIS (Cortex Microcontroller Software Interface Standard)
+   * Component: CORE Version: 4.3.0
+
+Package Vendor: NordicSemiconductor
+                http://developer.nordicsemi.com/nRF5_SDK/pieces/nRF_DeviceFamilyPack/NordicSemiconductor.nRF_DeviceFamilyPack.8.11.1.pack
+                NordicSemiconductor.nRF_DeviceFamilyPack.8.11.1
+                Nordic Semiconductor nRF ARM devices Device Family Pack.
+   * Component: Startup Version: 8.11.1
+
+<h2>Collection of Component include folders:</h2>
+  .\RTE\_nrf51422_xxac
+  C:\Keil_v5_27\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include
+  C:\Keil_v5_27\ARM\PACK\NordicSemiconductor\nRF_DeviceFamilyPack\8.11.1\Device\Include
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: ARM::CMSIS:CORE:4.3.0
+
+   * Component: NordicSemiconductor::Device:Startup:8.11.1
+      Include file:  Device\Include\system_nrf51.h
+      Source file:   Device\Source\arm\arm_startup_nrf51.s
+      Source file:   Device\Source\system_nrf51.c
+Build Time Elapsed:  00:00:05
+</pre>
+</body>
+</html>
