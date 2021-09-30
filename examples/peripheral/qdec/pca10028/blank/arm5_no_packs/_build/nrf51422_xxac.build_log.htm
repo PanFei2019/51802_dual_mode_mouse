@@ -1,0 +1,179 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: ¦ÌVision V5.12.0.0
+Copyright (C) 2014 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: 123 123, 123, LIC=MGX74-FLMIV-VHJ87-ECYNY-77GGB-RHREB
+ 
+Tool Versions:
+Toolchain:       MDK-ARM Professional  Version: 5.12.0.0
+Toolchain Path:  D:\Keil_v5\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.05 (build 41)
+Assembler:       Armasm.exe V5.05 (build 41)
+Linker/Locator:  ArmLink.exe V5.05 (build 41)
+Library Manager: ArmAr.exe V5.05 (build 41)
+Hex Converter:   FromElf.exe V5.05 (build 41)
+CPU DLL:         
+Dialog DLL:      
+    Target DLL: Segger\JL2CM3.dll
+Dialog DLL:      TARMCM1.DLL V1.08.00.0
+ 
+<h2>Project:</h2>
+E:\other\Nordic\51822\nRF5_SDK_12.3.0_d7731ad\nRF5_SDK_12.3.0_d7731ad\examples\peripheral\qdec\pca10028\blank\arm5_no_packs\qdec_example_pca10028.uvprojx
+Project File Date:  08/03/2018
+
+<h2>Output:</h2>
+Build target 'nrf51422_xxac'
+compiling nrf_drv_qdec.c...
+..\..\..\..\..\..\components\drivers_nrf\qdec\nrf_drv_qdec.c(145): warning:  #188-D: enumerated type mixed with another type
+      nrf_gpio_cfg_input(p_config->psela, GPIO_PIN_CNF_PULL_Pulldown);
+..\..\..\..\..\..\components\drivers_nrf\qdec\nrf_drv_qdec.c(146): warning:  #188-D: enumerated type mixed with another type
+      nrf_gpio_cfg_input(p_config->pselb, GPIO_PIN_CNF_PULL_Pulldown);
+..\..\..\..\..\..\components\drivers_nrf\qdec\nrf_drv_qdec.c: 2 warnings, 0 errors
+linking...
+Program Size: Code=7304 RO-data=484 RW-data=56 ZI-data=3440  
+FromELF: creating hex file...
+".\_build\nrf51422_xxac.axf" - 0 Error(s), 2 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: ARM
+                http://www.keil.com/pack/ARM.CMSIS.4.5.0.pack
+                ARM::CMSIS:CORE:4.3.0
+                CMSIS (Cortex Microcontroller Software Interface Standard)
+   * Component: CORE Version: 4.3.0
+
+Package Vendor: NordicSemiconductor
+                http://developer.nordicsemi.com/nRF5_SDK/pieces/nRF_DeviceFamilyPack/NordicSemiconductor.nRF_DeviceFamilyPack.8.11.1.pack
+                NordicSemiconductor::Device:Startup:8.11.1
+                Nordic Semiconductor nRF ARM devices Device Family Pack.
+   * Component: Startup Version: 8.11.1
+
+<h2>Collection of Component include folders:</h2>
+  E:\other\Nordic\51822\nRF5_SDK_12.3.0_d7731ad\nRF5_SDK_12.3.0_d7731ad\examples\peripheral\qdec\pca10028\blank\arm5_no_packs\RTE
+  D:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include
+  D:\Keil_v5\ARM\PACK\NordicSemiconductor\nRF_DeviceFamilyPack\8.11.1\Device\Include
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: ARM::CMSIS:CORE:4.3.0
+
+   * Component: NordicSemiconductor::Device:Startup:8.11.1
+      Source file:   Device\Source\system_nrf51.c
+      Source file:   Device\Source\arm\arm_startup_nrf51.s
+      Include file:  Device\Include\system_nrf51.h
+Load "E:\\other\\Nordic\\51822\\nRF5_SDK_12.3.0_d7731ad\\nRF5_SDK_12.3.0_d7731ad\\examples\\peripheral\\qdec\\pca10028\\blank\\arm5_no_packs\\_build\\nrf51422_xxac.axf" 
+Set JLink Project File to "E:\other\Nordic\51822\nRF5_SDK_12.3.0_d7731ad\nRF5_SDK_12.3.0_d7731ad\examples\peripheral\qdec\pca10028\blank\arm5_no_packs\JLinkSettings.ini"
+* JLink Info: Device "NRF51422_XXAC" selected (257 KB flash, 32 KB RAM).
+ 
+JLink info:
+------------
+DLL: V4.91b, compiled Sep 15 2014 09:17:56
+Firmware: J-Link ARM-OB STM32 compiled Aug 22 2012 19:52:04
+Hardware: V7.00
+S/N : 20090928 
+Feature(s) : RDI,FlashDL,FlashBP,JFlash,GDBFull 
+ 
+* JLink Info: Found SWD-DP with ID 0x0BB11477
+* JLink Info: Found Cortex-M0 r0p0, Little endian.
+* JLink Info: FPUnit: 4 code (BP) slots and 0 literal slots
+ROMTableAddr = 0xE00FF003
+ 
+Target info:
+------------
+Device: nRF51422_xxAC
+VTarget = 3.300V
+State of Pins: 
+TCK: 0, TDI: 0, TDO: 1, TMS: 0, TRES: 1, TRST: 1
+Hardware-Breakpoints: 4
+Software-Breakpoints: 8192
+Watchpoints:          2
+JTAG speed: 4000 kHz
+ 
+Erase Failed!
+Error: Flash Download failed  -  "Cortex-M0"
+</pre>
+</body>
+</html>
+lash,GDBFull 
+ 
+* JLink Info: Found SWD-DP with ID 0x0BB11477
+* JLink Info: Found Cortex-M0 r0p0, Little endian.
+* JLink Info: FPUnit: 4 code (BP) slots and 0 literal slots
+ROMTableAddr = 0xE00FF003
+ 
+Target info:
+------------
+Device: nRF51422_xxAC
+VTarget = 3.300V
+State of Pins: 
+TCK: 0, TDI: 0, TDO: 1, TMS: 0, TRES: 1, TRST: 1
+Hardware-Breakpoints: 4
+Software-Breakpoints: 8192
+Watchpoints:          2
+JTAG speed: 2000 kHz
+ 
+Erase Failed!
+Error: Flash Download failed  -  "Cortex-M0"
+Load "E:\\other\\Nordic\\51822\\nRF5_SDK_12.3.0_d7731ad\\nRF5_SDK_12.3.0_d7731ad\\examples\\peripheral\\qdec\\pca10028\\blank\\arm5_no_packs\\_build\\nrf51422_xxac.axf" 
+Set JLink Project File to "E:\other\Nordic\51822\nRF5_SDK_12.3.0_d7731ad\nRF5_SDK_12.3.0_d7731ad\examples\peripheral\qdec\pca10028\blank\arm5_no_packs\JLinkSettings.ini"
+* JLink Info: Device "NRF51422_XXAC" selected (257 KB flash, 32 KB RAM).
+ 
+JLink info:
+------------
+DLL: V4.91b, compiled Sep 15 2014 09:17:56
+Firmware: J-Link ARM-OB STM32 compiled Aug 22 2012 19:52:04
+Hardware: V7.00
+S/N : 20090928 
+Feature(s) : RDI,FlashDL,FlashBP,JFlash,GDBFull 
+ 
+* JLink Info: Found SWD-DP with ID 0x0BB11477
+* JLink Info: Found Cortex-M0 r0p0, Little endian.
+* JLink Info: FPUnit: 4 code (BP) slots and 0 literal slots
+ROMTableAddr = 0xE00FF003
+ 
+Target info:
+------------
+Device: nRF51422_xxAC
+VTarget = 3.300V
+State of Pins: 
+TCK: 0, TDI: 0, TDO: 1, TMS: 0, TRES: 1, TRST: 1
+Hardware-Breakpoints: 4
+Software-Breakpoints: 8192
+Watchpoints:          2
+JTAG speed: 4000 kHz
+ 
+Erase Failed!
+Error: Flash Download failed  -  "Cortex-M0"
+Load "E:\\other\\Nordic\\51822\\nRF5_SDK_12.3.0_d7731ad\\nRF5_SDK_12.3.0_d7731ad\\examples\\peripheral\\qdec\\pca10028\\blank\\arm5_no_packs\\_build\\nrf51422_xxac.axf" 
+Set JLink Project File to "E:\other\Nordic\51822\nRF5_SDK_12.3.0_d7731ad\nRF5_SDK_12.3.0_d7731ad\examples\peripheral\qdec\pca10028\blank\arm5_no_packs\JLinkSettings.ini"
+* JLink Info: Device "NRF51422_XXAC" selected (257 KB flash, 32 KB RAM).
+ 
+JLink info:
+------------
+DLL: V4.91b, compiled Sep 15 2014 09:17:56
+Firmware: J-Link ARM-OB STM32 compiled Aug 22 2012 19:52:04
+Hardware: V7.00
+S/N : 20090928 
+Feature(s) : RDI,FlashDL,FlashBP,JFlash,GDBFull 
+ 
+* JLink Info: Found SWD-DP with ID 0x0BB11477
+* JLink Info: Found Cortex-M0 r0p0, Little endian.
+* JLink Info: FPUnit: 4 code (BP) slots and 0 literal slots
+ROMTableAddr = 0xE00FF003
+ 
+Target info:
+------------
+Device: nRF51422_xxAC
+VTarget = 3.300V
+State of Pins: 
+TCK: 0, TDI: 0, TDO: 1, TMS: 0, TRES: 1, TRST: 1
+Hardware-Breakpoints: 4
+Software-Breakpoints: 8192
+Watchpoints:          2
+JTAG speed: 4000 kHz
+ 
+Erase Failed!
+Error: Flash Download failed  -  "Cortex-M0"

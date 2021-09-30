@@ -1,0 +1,282 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: ¶ÃVision V5.12.0.0
+Copyright (C) 2014 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: 123 Aero÷π≤Ω, Microsoft, LIC=6XJHL-089WC-MQF0F-6N867-W6ZJA-GTQDV
+ 
+Tool Versions:
+Toolchain:       MDK-ARM Professional  Version: 5.12.0.0
+Toolchain Path:  D:\Keil_v5\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.05 (build 41)
+Assembler:       Armasm.exe V5.05 (build 41)
+Linker/Locator:  ArmLink.exe V5.05 (build 41)
+Library Manager: ArmAr.exe V5.05 (build 41)
+Hex Converter:   FromElf.exe V5.05 (build 41)
+CPU DLL:         SARMCM3.DLL V5.12.0.0
+Dialog DLL:      DARMCM1.DLL V1.11.00.0
+    Target DLL: Segger\JL2CM3.dll
+Dialog DLL:      TARMCM1.DLL V1.08.00.0
+ 
+<h2>Project:</h2>
+D:\N_project\nRF5_SDK_12.3.0_d7731ad\nRF5_SDK_12.3.0_d7731ad\examples\ble_peripheral\ble_app_hids_mouse\pca10028\s130\arm5_no_packs\ble_app_hids_mouse_pca10028_s130.uvprojx
+Project File Date:  02/27/2019
+
+<h2>Output:</h2>
+Build target 'nrf51422_xxac'
+compiling main.c...
+..\..\..\main.c(614): warning:  #188-D: enumerated type mixed with another type
+                                nrf_drv_spi_config_t spi_config = NRF_DRV_SPI_DEFAULT_CONFIG;
+..\..\..\main.c(630): warning:  #188-D: enumerated type mixed with another type
+                                nrf_gpio_cfg_input(QDEC_CONFIG_PIO_A, GPIO_PIN_CNF_PULL_Pulldown);
+..\..\..\main.c(631): warning:  #188-D: enumerated type mixed with another type
+                                nrf_gpio_cfg_input(QDEC_CONFIG_PIO_B, GPIO_PIN_CNF_PULL_Pulldown);
+..\..\..\main.c(713): warning:  #188-D: enumerated type mixed with another type
+                                                                        nrf_drv_spi_config_t spi_config = NRF_DRV_SPI_DEFAULT_CONFIG;
+..\..\..\main.c(730): warning:  #188-D: enumerated type mixed with another type
+                                                                        nrf_gpio_cfg_input(QDEC_CONFIG_PIO_A, GPIO_PIN_CNF_PULL_Pulldown);
+..\..\..\main.c(731): warning:  #188-D: enumerated type mixed with another type
+                                                                        nrf_gpio_cfg_input(QDEC_CONFIG_PIO_B, GPIO_PIN_CNF_PULL_Pulldown);
+..\..\..\main.c(603): warning:  #177-D: variable "ret" was declared but never referenced
+                ret_code_t ret;
+..\..\..\main.c(916): warning:  #188-D: enumerated type mixed with another type
+                                nrf_drv_spi_config_t spi_config = NRF_DRV_SPI_DEFAULT_CONFIG;
+..\..\..\main.c(1043): warning:  #186-D: pointless comparison of unsigned integer with zero
+                        if(AverageVoltage>=0)
+..\..\..\main.c(1092): warning:  #188-D: enumerated type mixed with another type
+                                                                nrf_drv_spi_config_t spi_config = NRF_DRV_SPI_DEFAULT_CONFIG;
+..\..\..\main.c(1125): warning:  #188-D: enumerated type mixed with another type
+                                                        nrf_gpio_cfg_input(QDEC_CONFIG_PIO_A, GPIO_PIN_CNF_PULL_Pullup);
+..\..\..\main.c(1126): warning:  #188-D: enumerated type mixed with another type
+                                                        nrf_gpio_cfg_input(QDEC_CONFIG_PIO_B, GPIO_PIN_CNF_PULL_Pullup);
+..\..\..\main.c(906): warning:  #177-D: variable "gap_conn_params" was declared but never referenced
+                ble_gap_conn_params_t   gap_conn_params;
+..\..\..\main.c(1264): warning:  #188-D: enumerated type mixed with another type
+                                                nrf_gpio_cfg_input(QDEC_CONFIG_PIO_A, GPIO_PIN_CNF_PULL_Pullup);
+..\..\..\main.c(1265): warning:  #188-D: enumerated type mixed with another type
+                                                nrf_gpio_cfg_input(QDEC_CONFIG_PIO_B, GPIO_PIN_CNF_PULL_Pullup);
+..\..\..\main.c(1998): warning:  #188-D: enumerated type mixed with another type
+                                        nrf_drv_spi_config_t spi_config = NRF_DRV_SPI_DEFAULT_CONFIG;
+..\..\..\main.c(2030): warning:  #188-D: enumerated type mixed with another type
+                                        nrf_gpio_cfg_input(QDEC_CONFIG_PIO_A, GPIO_PIN_CNF_PULL_Pullup);
+..\..\..\main.c(2031): warning:  #188-D: enumerated type mixed with another type
+                                        nrf_gpio_cfg_input(QDEC_CONFIG_PIO_B, GPIO_PIN_CNF_PULL_Pullup);
+..\..\..\main.c(2603): warning:  #188-D: enumerated type mixed with another type
+                                                                                        nrf_drv_spi_config_t spi_config = NRF_DRV_SPI_DEFAULT_CONFIG;
+..\..\..\main.c(2758): warning:  #188-D: enumerated type mixed with another type
+                                                                                nrf_drv_spi_config_t spi_config = NRF_DRV_SPI_DEFAULT_CONFIG;
+..\..\..\main.c(2905): warning:  #188-D: enumerated type mixed with another type
+                                                                nrf_drv_spi_config_t spi_config = NRF_DRV_SPI_DEFAULT_CONFIG;
+..\..\..\main.c(3077): warning:  #188-D: enumerated type mixed with another type
+                                        nrf_drv_spi_config_t spi_config = NRF_DRV_SPI_DEFAULT_CONFIG;
+..\..\..\main.c(2560): warning:  #177-D: variable "gap_conn_params" was declared but never referenced
+                ble_gap_conn_params_t   gap_conn_params;
+..\..\..\main.c(2561): warning:  #177-D: variable "current_peer_id" was declared but never referenced
+                pm_peer_id_t current_peer_id = 0;
+..\..\..\main.c(3252): warning:  #188-D: enumerated type mixed with another type
+                                        nrf_drv_spi_config_t spi_config = NRF_DRV_SPI_DEFAULT_CONFIG;
+..\..\..\main.c(3370): warning:  #111-D: statement is unreachable
+                                        break;
+..\..\..\main.c(3374): warning:  #111-D: statement is unreachable
+                                        break;
+..\..\..\main.c(3378): warning:  #111-D: statement is unreachable
+                                        break;
+..\..\..\main.c(3382): warning:  #111-D: statement is unreachable
+                                        break;
+..\..\..\main.c(3387): warning:  #111-D: statement is unreachable
+                                        break;
+..\..\..\main.c(3392): warning:  #111-D: statement is unreachable
+                                        break;
+..\..\..\main.c(3535): warning:  #188-D: enumerated type mixed with another type
+                        nrf_drv_spi_config_t spi_config = NRF_DRV_SPI_DEFAULT_CONFIG;
+..\..\..\main.c(3697): warning:  #940-D: missing return statement at end of non-void function "modify_base_address_0"
+  }
+..\..\..\main.c(3705): warning:  #940-D: missing return statement at end of non-void function "modify_base_address_0_encrypt"
+  }
+..\..\..\main.c(3899): warning:  #186-D: pointless comparison of unsigned integer with zero
+                                                if(AverageVoltage>=0)
+..\..\..\main.c(3767): warning:  #177-D: variable "err_code" was declared but never referenced
+        uint32_t err_code;
+..\..\..\main.c(4249): warning:  #188-D: enumerated type mixed with another type
+        nrf_gpio_cfg_input(18, GPIO_PIN_CNF_PULL_Pullup);
+..\..\..\main.c(4250): warning:  #188-D: enumerated type mixed with another type
+        nrf_gpio_cfg_input(19, GPIO_PIN_CNF_PULL_Pullup);
+..\..\..\main.c(4251): warning:  #188-D: enumerated type mixed with another type
+        nrf_gpio_cfg_input(20, GPIO_PIN_CNF_PULL_Pullup);
+..\..\..\main.c(4396): warning:  #188-D: enumerated type mixed with another type
+                                nrf_drv_spi_config_t spi_config = NRF_DRV_SPI_DEFAULT_CONFIG;
+..\..\..\main.c(4879): warning:  #188-D: enumerated type mixed with another type
+                                timer_cfg.bit_width = TIMER_BITMODE_BITMODE_32Bit;
+..\..\..\main.c(4933): warning:  #188-D: enumerated type mixed with another type
+                                gpiote_config.pull  = GPIO_PIN_CNF_PULL_Pullup;
+..\..\..\main.c(4969): warning:  #188-D: enumerated type mixed with another type
+                                nrf_drv_spi_config_t spi_config = NRF_DRV_SPI_DEFAULT_CONFIG;
+..\..\..\main.c(5404): warning:  #188-D: enumerated type mixed with another type
+                                                                        nrf_drv_spi_config_t spi_config = NRF_DRV_SPI_DEFAULT_CONFIG;
+..\..\..\main.c(5451): warning:  #188-D: enumerated type mixed with another type
+                                                                        nrf_gpio_cfg_input(QDEC_CONFIG_PIO_A, GPIO_PIN_CNF_PULL_Pullup);
+..\..\..\main.c(5452): warning:  #188-D: enumerated type mixed with another type
+                                                                        nrf_gpio_cfg_input(QDEC_CONFIG_PIO_B, GPIO_PIN_CNF_PULL_Pullup);
+..\..\..\main.c(5570): warning:  #188-D: enumerated type mixed with another type
+                                                                nrf_drv_spi_config_t spi_config = NRF_DRV_SPI_DEFAULT_CONFIG;
+..\..\..\main.c(5634): warning:  #188-D: enumerated type mixed with another type
+                                                                nrf_gpio_cfg_input(QDEC_CONFIG_PIO_A, GPIO_PIN_CNF_PULL_Pullup);
+..\..\..\main.c(5635): warning:  #188-D: enumerated type mixed with another type
+                                                                nrf_gpio_cfg_input(QDEC_CONFIG_PIO_B, GPIO_PIN_CNF_PULL_Pullup);
+..\..\..\main.c(5654): warning:  #188-D: enumerated type mixed with another type
+                                                                nrf_gpio_cfg_input(QDEC_CONFIG_PIO_A, GPIO_PIN_CNF_PULL_Pullup);
+..\..\..\main.c(5655): warning:  #188-D: enumerated type mixed with another type
+                                                                nrf_gpio_cfg_input(QDEC_CONFIG_PIO_B, GPIO_PIN_CNF_PULL_Pullup);
+..\..\..\main.c(5701): warning:  #188-D: enumerated type mixed with another type
+                                                                nrf_drv_spi_config_t spi_config = NRF_DRV_SPI_DEFAULT_CONFIG;
+..\..\..\main.c(5772): warning:  #188-D: enumerated type mixed with another type
+                                                                        nrf_drv_spi_config_t spi_config = NRF_DRV_SPI_DEFAULT_CONFIG;
+..\..\..\main.c(484): warning:  #550-D: variable "m_is_wl_changed" was set but never used
+  static bool           m_is_wl_changed;                                      /**< Indicates if the whitelist has been changed since last time it has been updated in the Peer Manager. */
+..\..\..\main.c(1844): warning:  #177-D: function "timers_start" was declared but never referenced
+  static void timers_start(void)
+..\..\..\main.c: 55 warnings, 0 errors
+linking...
+Program Size: Code=72832 RO-data=1384 RW-data=992 ZI-data=7216  
+FromELF: creating hex file...
+".\_build\nrf51822_xxac.axf" - 0 Error(s), 55 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: ARM
+                http://www.keil.com/pack/ARM.CMSIS.4.5.0.pack
+                ARM::CMSIS:CORE:4.3.0
+                CMSIS (Cortex Microcontroller Software Interface Standard)
+   * Component: CORE Version: 4.3.0
+
+Package Vendor: NordicSemiconductor
+                http://developer.nordicsemi.com/nRF5_SDK/pieces/nRF_DeviceFamilyPack/NordicSemiconductor.nRF_DeviceFamilyPack.8.11.1.pack
+                NordicSemiconductor::Device:Startup:8.11.1
+                Nordic Semiconductor nRF ARM devices Device Family Pack.
+   * Component: Startup Version: 8.11.1
+
+<h2>Collection of Component include folders:</h2>
+  D:\N_project\nRF5_SDK_12.3.0_d7731ad\nRF5_SDK_12.3.0_d7731ad\examples\ble_peripheral\ble_app_hids_mouse\pca10028\s130\arm5_no_packs\RTE
+  D:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include
+  D:\Keil_v5\ARM\PACK\NordicSemiconductor\nRF_DeviceFamilyPack\8.11.1\Device\Include
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: ARM::CMSIS:CORE:4.3.0
+
+   * Component: NordicSemiconductor::Device:Startup:8.11.1
+      Source file:   Device\Source\arm\arm_startup_nrf51.s
+      Source file:   Device\Source\system_nrf51.c
+      Include file:  Device\Include\system_nrf51.h
+Load "D:\\N_project\\nRF5_SDK_12.3.0_d7731ad\\nRF5_SDK_12.3.0_d7731ad\\examples\\ble_peripheral\\ble_app_hids_mouse\\pca10028\\s130\\arm5_no_packs\\_build\\nrf51822_xxac.axf" 
+Set JLink Project File to "D:\N_project\nRF5_SDK_12.3.0_d7731ad\nRF5_SDK_12.3.0_d7731ad\examples\ble_peripheral\ble_app_hids_mouse\pca10028\s130\arm5_no_packs\JLinkSettings.ini"
+* JLink Info: Device "NRF51822_XXAC" selected.
+ 
+JLink info:
+------------
+DLL: V5.12f, compiled May 17 2016 16:03:35
+Firmware: J-Link ARM-OB STM32 compiled Aug 22 2012 19:52:04
+Hardware: V7.00
+S/N : 20090928 
+Feature(s) : RDI,FlashDL,FlashBP,JFlash,GDBFull 
+ 
+* JLink Info: Found SWD-DP with ID 0x0BB11477
+* JLink Info: Found Cortex-M0 r0p0, Little endian.
+* JLink Info: FPUnit: 4 code (BP) slots and 0 literal slots
+* JLink Info: CoreSight components:
+* JLink Info: ROMTbl 0 @ F0000000
+* JLink Info: ROMTbl 0 [0]: F00FF000, CID: B105100D, PID: 000BB471 ROM Table
+* JLink Info: ROMTbl 1 @ E00FF000
+* JLink Info: ROMTbl 1 [0]: FFF0F000, CID: B105E00D, PID: 000BB008 SCS
+* JLink Info: ROMTbl 1 [1]: FFF02000, CID: B105E00D, PID: 000BB00A DWT
+* JLink Info: ROMTbl 1 [2]: FFF03000, CID: B105E00D, PID: 000BB00B FPB
+* JLink Info: ROMTbl 0 [1]: 00002000, CID: B105900D, PID: 000BB9A3 ???
+ROMTableAddr = 0xE00FF003
+ 
+Target info:
+------------
+Device: nRF51822_xxAC
+VTarget = 3.300V
+State of Pins: 
+TCK: 0, TDI: 0, TDO: 1, TMS: 0, TRES: 1, TRST: 1
+Hardware-Breakpoints: 4
+Software-Breakpoints: 8192
+Watchpoints:          2
+JTAG speed: 4000 kHz
+ 
+Erase Done.
+Programming Done.
+Verify OK.
+Application running ...
+</pre>
+</body>
+</html>
+ TRES: 1, TRST: 1
+Hardware-Breakpoints: 4
+Software-Breakpoints: 8192
+Watchpoints:          2
+JTAG speed: 4000 kHz
+ 
+Erase Done.
+Programming Done.
+Verify OK.
+Application running ...
+Cannot setup Breakpoint at Address
+Erase Failed!
+Error: Flash Download failed  -  "Cortex-M0"
+***JLink Error: Could not start CPU core. (ErrorCode: -1)
+Load "D:\\N_project\\nRF5_SDK_12.3.0_d7731ad\\nRF5_SDK_12.3.0_d7731ad\\examples\\ble_peripheral\\ble_app_hids_mouse\\pca10028\\s130\\arm5_no_packs\\_build\\nrf51822_xxac.axf" 
+Set JLink Project File to "D:\N_project\nRF5_SDK_12.3.0_d7731ad\nRF5_SDK_12.3.0_d7731ad\examples\ble_peripheral\ble_app_hids_mouse\pca10028\s130\arm5_no_packs\JLinkSettings.ini"
+* JLink Info: Device "NRF51822_XXAC" selected.
+ 
+JLink info:
+------------
+DLL: V5.12f, compiled May 17 2016 16:03:35
+Firmware: J-Link ARM-OB STM32 compiled Aug 22 2012 19:52:04
+Hardware: V7.00
+S/N : 20090928 
+Feature(s) : RDI,FlashDL,FlashBP,JFlash,GDBFull 
+ 
+Error: Flash Download failed  -  Target DLL has been cancelled
+Load "D:\\N_project\\nRF5_SDK_12.3.0_d7731ad\\nRF5_SDK_12.3.0_d7731ad\\examples\\ble_peripheral\\ble_app_hids_mouse\\pca10028\\s130\\arm5_no_packs\\_build\\nrf51822_xxac.axf" 
+Set JLink Project File to "D:\N_project\nRF5_SDK_12.3.0_d7731ad\nRF5_SDK_12.3.0_d7731ad\examples\ble_peripheral\ble_app_hids_mouse\pca10028\s130\arm5_no_packs\JLinkSettings.ini"
+* JLink Info: Device "NRF51822_XXAC" selected.
+ 
+JLink info:
+------------
+DLL: V5.12f, compiled May 17 2016 16:03:35
+Firmware: J-Link ARM-OB STM32 compiled Aug 22 2012 19:52:04
+Hardware: V7.00
+S/N : 20090928 
+Feature(s) : RDI,FlashDL,FlashBP,JFlash,GDBFull 
+ 
+* JLink Info: Found SWD-DP with ID 0x0BB11477
+* JLink Info: Found Cortex-M0 r0p0, Little endian.
+* JLink Info: FPUnit: 4 code (BP) slots and 0 literal slots
+* JLink Info: CoreSight components:
+* JLink Info: ROMTbl 0 @ F0000000
+* JLink Info: ROMTbl 0 [0]: F00FF000, CID: B105100D, PID: 000BB471 ROM Table
+* JLink Info: ROMTbl 1 @ E00FF000
+* JLink Info: ROMTbl 1 [0]: FFF0F000, CID: B105E00D, PID: 000BB008 SCS
+* JLink Info: ROMTbl 1 [1]: FFF02000, CID: B105E00D, PID: 000BB00A DWT
+* JLink Info: ROMTbl 1 [2]: FFF03000, CID: B105E00D, PID: 000BB00B FPB
+* JLink Info: ROMTbl 0 [1]: 00002000, CID: B105900D, PID: 000BB9A3 ???
+ROMTableAddr = 0xE00FF003
+ 
+Target info:
+------------
+Device: nRF51822_xxAC
+VTarget = 3.300V
+State of Pins: 
+TCK: 0, TDI: 0, TDO: 1, TMS: 0, TRES: 1, TRST: 1
+Hardware-Breakpoints: 4
+Software-Breakpoints: 8192
+Watchpoints:          2
+JTAG speed: 4000 kHz
+ 
+Erase Done.
+Programming Done.
+Verify OK.
+Application running ...

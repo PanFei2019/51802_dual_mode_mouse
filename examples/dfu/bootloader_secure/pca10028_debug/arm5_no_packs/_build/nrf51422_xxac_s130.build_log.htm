@@ -1,0 +1,331 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: ¶ÃVision V5.12.0.0
+Copyright (C) 2014 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: 123 Aero÷π≤Ω, Microsoft, LIC=6XJHL-089WC-MQF0F-6N867-W6ZJA-GTQDV
+ 
+Tool Versions:
+Toolchain:       MDK-ARM Professional  Version: 5.12.0.0
+Toolchain Path:  D:\Keil_v5\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.05 (build 41)
+Assembler:       Armasm.exe V5.05 (build 41)
+Linker/Locator:  ArmLink.exe V5.05 (build 41)
+Library Manager: ArmAr.exe V5.05 (build 41)
+Hex Converter:   FromElf.exe V5.05 (build 41)
+CPU DLL:         SARMCM3.DLL V5.12.0.0
+Dialog DLL:      DARMCM1.DLL V1.11.00.0
+Target DLL:      UL2CM3.DLL V1.153.0.0
+Dialog DLL:      TARMCM1.DLL V1.08.00.0
+ 
+<h2>Project:</h2>
+Z:\VSN_workspace\dual_mode_mouse\nRF5_SDK_12.3.0_d7731ad\nRF5_SDK_12.3.0_d7731ad\examples\dfu\bootloader_secure\pca10028_debug\arm5_no_packs\secure_dfu_secure_dfu_ble_s130_pca10028_debug.uvprojx
+Project File Date:  07/07/2020
+
+<h2>Output:</h2>
+Rebuild target 'nrf51422_xxac_s130'
+compiling dfu-cc.pb.c...
+compiling dfu_public_key.c...
+compiling dfu_req_handling.c...
+compiling main.c...
+compiling boards.c...
+compiling ble_advdata.c...
+compiling ble_conn_params.c...
+..\..\..\..\..\components\ble\common\ble_conn_params.c(230): warning:  #177-D: variable "gap_conn_params" was declared but never referenced
+        ble_gap_conn_params_t   gap_conn_params;
+..\..\..\..\..\components\ble\common\ble_conn_params.c: 1 warning, 0 errors
+compiling ble_srv_common.c...
+compiling nrf_ble_dfu.c...
+..\..\..\..\..\components\libraries\bootloader\ble_dfu\nrf_ble_dfu.c(67): warning:  #47-D: incompatible redefinition of macro "SLAVE_LATENCY" (declared at line 54 of "..\..\configuration.h")
+  #define SLAVE_LATENCY                        0                                                      /**< Slave latency. */
+..\..\..\..\..\components\libraries\bootloader\ble_dfu\nrf_ble_dfu.c(68): warning:  #47-D: incompatible redefinition of macro "CONN_SUP_TIMEOUT" (declared at line 55 of "..\..\configuration.h")
+  #define CONN_SUP_TIMEOUT                     (4 * 100)                                              /**< Connection supervisory timeout (4 seconds). */
+..\..\..\..\..\components\libraries\bootloader\ble_dfu\nrf_ble_dfu.c: 2 warnings, 0 errors
+compiling nrf_bootloader.c...
+compiling nrf_bootloader_app_start.c...
+compiling nrf_bootloader_info.c...
+compiling nrf_dfu.c...
+compiling nrf_dfu_flash.c...
+compiling nrf_dfu_mbr.c...
+compiling nrf_dfu_settings.c...
+compiling nrf_dfu_transport.c...
+compiling nrf_dfu_utils.c...
+compiling nrf_drv_common.c...
+compiling nrf_drv_rng.c...
+compiling nrf_nvmc.c...
+compiling app_error_weak.c...
+compiling app_scheduler.c...
+compiling app_timer.c...
+compiling app_timer_appsh.c...
+compiling app_util_platform.c...
+compiling crc32.c...
+compiling ecc.c...
+compiling fstorage.c...
+compiling hci_mem_pool.c...
+compiling nrf_assert.c...
+compiling nrf_crypto.c...
+compiling nrf_queue.c...
+compiling sdk_errors.c...
+compiling sha256.c...
+compiling nrf_log_backend_serial.c...
+compiling nrf_log_frontend.c...
+compiling RTT_Syscalls_KEIL.c...
+compiling SEGGER_RTT.c...
+compiling SEGGER_RTT_printf.c...
+compiling softdevice_handler.c...
+compiling softdevice_handler_appsh.c...
+compiling pb_common.c...
+compiling pb_decode.c...
+assembling arm_startup_nrf51.s...
+compiling system_nrf51.c...
+linking...
+.\_build\nrf51802_s130_bootloader.axf: Error: L6406E: No space in execution regions with .ANY selector matching fstorage.o(i.fs_erase).
+.\_build\nrf51802_s130_bootloader.axf: Error: L6406E: No space in execution regions with .ANY selector matching dfu-cc.pb.o(.constdata).
+.\_build\nrf51802_s130_bootloader.axf: Error: L6406E: No space in execution regions with .ANY selector matching main.o(i.main).
+.\_build\nrf51802_s130_bootloader.axf: Error: L6406E: No space in execution regions with .ANY selector matching nrf_ble_dfu.o(i.response_send).
+.\_build\nrf51802_s130_bootloader.axf: Error: L6406E: No space in execution regions with .ANY selector matching pb_decode.o(i.decode_callback_field).
+.\_build\nrf51802_s130_bootloader.axf: Error: L6406E: No space in execution regions with .ANY selector matching nrf_ble_dfu.o(i.response_select_object_cmd_send).
+.\_build\nrf51802_s130_bootloader.axf: Error: L6406E: No space in execution regions with .ANY selector matching app_timer.o(i.app_timer_init).
+.\_build\nrf51802_s130_bootloader.axf: Error: L6406E: No space in execution regions with .ANY selector matching nrf_ble_dfu.o(i.dfu_ctrl_pt_add).
+.\_build\nrf51802_s130_bootloader.axf: Error: L6406E: No space in execution regions with .ANY selector matching fstorage.o(i.queue_process).
+.\_build\nrf51802_s130_bootloader.axf: Error: L6406E: No space in execution regions with .ANY selector matching segger_rtt.o(i._DoInit).
+.\_build\nrf51802_s130_bootloader.axf: Error: L6406E: No space in execution regions with .ANY selector matching ble_conn_params.o(i.conn_params_negotiation).
+.\_build\nrf51802_s130_bootloader.axf: Error: L6406E: No space in execution regions with .ANY selector matching nrf_ble_dfu.o(i.dfu_pkt_char_add).
+.\_build\nrf51802_s130_bootloader.axf: Error: L6406E: No space in execution regions with .ANY selector matching fstorage.o(i.fs_sys_event_handler).
+.\_build\nrf51802_s130_bootloader.axf: Error: L6406E: No space in execution regions with .ANY selector matching dfu_req_handling.o(i.nrf_dfu_req_handler_on_req).
+.\_build\nrf51802_s130_bootloader.axf: Error: L6406E: No space in execution regions with .ANY selector matching ble_conn_params.o(i.update_timeout_handler).
+.\_build\nrf51802_s130_bootloader.axf: Error: L6406E: No space in execution regions with .ANY selector matching nrf_ble_dfu.o(i.ble_dfu_init).
+.\_build\nrf51802_s130_bootloader.axf: Error: L6406E: No space in execution regions with .ANY selector matching nrf_bootloader.o(i.nrf_bootloader_init).
+.\_build\nrf51802_s130_bootloader.axf: Error: L6406E: No space in execution regions with .ANY selector matching nrf_dfu_utils.o(i.nrf_dfu_continue).
+.\_build\nrf51802_s130_bootloader.axf: Error: L6406E: No space in execution regions with .ANY selector matching nrf_ble_dfu.o(i.gap_params_init).
+.\_build\nrf51802_s130_bootloader.axf: Error: L6406E: No space in execution regions with .ANY selector matching nrf_drv_rng.o(i.RNG_IRQHandler).
+.\_build\nrf51802_s130_bootloader.axf: Error: L6406E: No space in execution regions with .ANY selector matching segger_rtt.o(i._WriteBlocking).
+.\_build\nrf51802_s130_bootloader.axf: Error: L6406E: No space in execution regions with .ANY selector matching uldiv.o(.text).
+.\_build\nrf51802_s130_bootloader.axf: Error: L6406E: No space in execution regions with .ANY selector matching nrf_ble_dfu.o(i.advertising_init).
+.\_build\nrf51802_s130_bootloader.axf: Error: L6406E: No space in execution regions with .ANY selector matching pb_decode.o(i.read_raw_value).
+.\_build\nrf51802_s130_bootloader.axf: Error: L6406E: No space in execution regions with .ANY selector matching dfu_req_handling.o(i.nrf_dfu_req_handler_init).
+.\_build\nrf51802_s130_bootloader.axf: Error: L6406E: No space in execution regions with .ANY selector matching nrf_ble_dfu.o(i.advertising_start).
+.\_build\nrf51802_s130_bootloader.axf: Error: L6406E: No space in execution regions with .ANY selector matching segger_rtt.o(i.SEGGER_RTT_WriteNoLock).
+.\_build\nrf51802_s130_bootloader.axf: Error: L6406E: No space in execution regions with .ANY selector matching pb_decode.o(i.pb_read).
+.\_build\nrf51802_s130_bootloader.axf: Error: L6406E: No space in execution regions with .ANY selector matching micro_ecc_lib_uECC.c.o(.text.uECC_vli_sub).
+.\_build\nrf51802_s130_bootloader.axf: Error: L6406E: No space in execution regions with .ANY selector matching pb_decode.o(i.pb_decode_fixed64).
+.\_build\nrf51802_s130_bootloader.axf: Error: L6406E: No space in execution regions with .ANY selector matching pb_decode.o(i.pb_skip_field).
+.\_build\nrf51802_s130_bootloader.axf: Error: L6406E: No space in execution regions with .ANY selector matching nrf_dfu_flash.o(i.fs_evt_handler).
+.\_build\nrf51802_s130_bootloader.axf: Error: L6406E: No space in execution regions with .ANY selector matching softdevice_handler.o(i.softdevice_handler_init).
+.\_build\nrf51802_s130_bootloader.axf: Error: L6406E: No space in execution regions with .ANY selector matching micro_ecc_lib_uECC.c.o(.text.uECC_vli_add).
+.\_build\nrf51802_s130_bootloader.axf: Error: L6406E: No space in execution regions with .ANY selector matching ecc.o(i.ecc_p256_verify).
+.\_build\nrf51802_s130_bootloader.axf: Error: L6406E: No space in execution regions with .ANY selector matching pb_decode.o(i.pb_dec_svarint).
+.\_build\nrf51802_s130_bootloader.axf: Error: L6406E: No space in execution regions with .ANY selector matching pb_decode.o(i.pb_dec_uvarint).
+.\_build\nrf51802_s130_bootloader.axf: Error: L6406E: No space in execution regions with .ANY selector matching pb_decode.o(i.pb_dec_varint).
+.\_build\nrf51802_s130_bootloader.axf: Error: L6406E: No space in execution regions with .ANY selector matching micro_ecc_lib_uECC.c.o(.text.x_side_default).
+.\_build\nrf51802_s130_bootloader.axf: Error: L6406E: No space in execution regions with .ANY selector matching ble_conn_params.o(i.ble_conn_params_init).
+.\_build\nrf51802_s130_bootloader.axf: Error: L6406E: No space in execution regions with .ANY selector matching fstorage.o(i.on_operation_success).
+.\_build\nrf51802_s130_bootloader.axf: Error: L6406E: No space in execution regions with .ANY selector matching sha256.o(i.sha256_init).
+.\_build\nrf51802_s130_bootloader.axf: Error: L6406E: No space in execution regions with .ANY selector matching nrf_ble_dfu.o(.conststring).
+.\_build\nrf51802_s130_bootloader.axf: Error: L6406E: No space in execution regions with .ANY selector matching nrf_dfu_settings.o(i.wait_for_queue).
+.\_build\nrf51802_s130_bootloader.axf: Error: L6406E: No space in execution regions with .ANY selector matching sha256.o(i.sha256_update).
+.\_build\nrf51802_s130_bootloader.axf: Error: L6406E: No space in execution regions with .ANY selector matching dfu_req_handling.o(i.pb_decoding_callback).
+.\_build\nrf51802_s130_bootloader.axf: Error: L6406E: No space in execution regions with .ANY selector matching nrf_crypto.o(i.nrf_crypto_hash_compute).
+.\_build\nrf51802_s130_bootloader.axf: Error: L6406E: No space in execution regions with .ANY selector matching pb_decode.o(i.pb_decode_varint32).
+.\_build\nrf51802_s130_bootloader.axf: Error: L6406E: No space in execution regions with .ANY selector matching app_timer.o(i.timer_stop_op_schedule).
+.\_build\nrf51802_s130_bootloader.axf: Error: L6406E: No space in execution regions with .ANY selector matching fstorage.o(i.send_event).
+.\_build\nrf51802_s130_bootloader.axf: Error: L6406E: No space in execution regions with .ANY selector matching system_nrf51.o(i.is_manual_peripheral_setup_needed).
+.\_build\nrf51802_s130_bootloader.axf: Error: L6406E: No space in execution regions with .ANY selector matching pb_decode.o(i.pb_decode_varint).
+.\_build\nrf51802_s130_bootloader.axf: Error: L6406E: No space in execution regions with .ANY selector matching dfu_req_handling.o(i.on_dfu_complete).
+.\_build\nrf51802_s130_bootloader.axf: Error: L6406E: No space in execution regions with .ANY selector matching main.o(i.app_error_fault_handler).
+.\_build\nrf51802_s130_bootloader.axf: Error: L6406E: No space in execution regions with .ANY selector matching nrf_dfu.o(i.nrf_dfu_enter_check).
+.\_build\nrf51802_s130_bootloader.axf: Error: L6406E: No space in execution regions with .ANY selector matching app_timer.o(i.NVIC_SetPriority).
+.\_build\nrf51802_s130_bootloader.axf: Error: L6406E: No space in execution regions with .ANY selector matching app_timer.o(i.rtc1_stop).
+.\_build\nrf51802_s130_bootloader.axf: Error: L6406E: No space in execution regions with .ANY selector matching micro_ecc_lib_uECC.c.o(.text.uECC_vli_numBits).
+.\_build\nrf51802_s130_bootloader.axf: Error: L6406E: No space in execution regions with .ANY selector matching nrf_dfu_settings.o(.conststring).
+.\_build\nrf51802_s130_bootloader.axf: Error: L6406E: No space in execution regions with .ANY selector matching softdevice_handler.o(.conststring).
+.\_build\nrf51802_s130_bootloader.axf: Error: L6406E: No space in execution regions with .ANY selector matching pb_decode.o(i.pb_decode_tag).
+.\_build\nrf51802_s130_bootloader.axf: Error: L6406E: No space in execution regions with .ANY selector matching dfu_public_key.o(.constdata).
+.\_build\nrf51802_s130_bootloader.axf: Error: L6406E: No space in execution regions with .ANY selector matching nrf_dfu_mbr.o(.constdata).
+.\_build\nrf51802_s130_bootloader.axf: Error: L6406E: No space in execution regions with .ANY selector matching app_timer.o(i.elapsed_ticks_acquire).
+.\_build\nrf51802_s130_bootloader.axf: Error: L6406E: No space in execution regions with .ANY selector matching app_timer.o(i.timer_list_insert).
+.\_build\nrf51802_s130_bootloader.axf: Error: L6406E: No space in execution regions with .ANY selector matching micro_ecc_lib_uECC.c.o(.text.vli_modInv_update).
+.\_build\nrf51802_s130_bootloader.axf: Error: L6406E: No space in execution regions with .ANY selector matching pb_decode.o(i.pb_dec_submessage).
+.\_build\nrf51802_s130_bootloader.axf: Error: L6406E: No space in execution regions with .ANY selector matching micro_ecc_lib_uECC.c.o(.text.apply_z).
+.\_build\nrf51802_s130_bootloader.axf: Error: L6406E: No space in execution regions with .ANY selector matching nrf_nvmc.o(i.nrf_nvmc_write_words).
+.\_build\nrf51802_s130_bootloader.axf: Error: L6406E: No space in execution regions with .ANY selector matching app_scheduler.o(i.app_sched_execute).
+.\_build\nrf51802_s130_bootloader.axf: Error: L6406E: No space in execution regions with .ANY selector matching app_util_platform.o(i.app_util_critical_region_enter).
+.\_build\nrf51802_s130_bootloader.axf: Error: L6406E: No space in execution regions with .ANY selector matching crc32.o(i.crc32_compute).
+.\_build\nrf51802_s130_bootloader.axf: Error: L6406E: No space in execution regions with .ANY selector matching segger_rtt.o(i._WriteNoCheck).
+.\_build\nrf51802_s130_bootloader.axf: Error: L6406E: No space in execution regions with .ANY selector matching pb_decode.o(i.pb_dec_bytes).
+.\_build\nrf51802_s130_bootloader.axf: Error: L6406E: No space in execution regions with .ANY selector matching pb_decode.o(i.pb_dec_string).
+.\_build\nrf51802_s130_bootloader.axf: Error: L6406E: No space in execution regions with .ANY selector matching nrf_dfu_settings.o(i.delay_operation).
+.\_build\nrf51802_s130_bootloader.axf: Error: L6406E: No space in execution regions with .ANY selector matching fstorage.o(i.queue_get_next_free).
+.\_build\nrf51802_s130_bootloader.axf: Error: L6406E: No space in execution regions with .ANY selector matching arm_startup_nrf51.o(.text).
+.\_build\nrf51802_s130_bootloader.axf: Error: L6406E: No space in execution regions with .ANY selector matching pb_decode.o(i.pb_decode_svarint).
+.\_build\nrf51802_s130_bootloader.axf: Error: L6406E: No space in execution regions with .ANY selector matching pb_decode.o(i.pb_make_string_substream).
+.\_build\nrf51802_s130_bootloader.axf: Error: L6406E: No space in execution regions with .ANY selector matching main.o(i.app_error_handler_bare).
+.\_build\nrf51802_s130_bootloader.axf: Error: L6406E: No space in execution regions with .ANY selector matching nrf_bootloader_app_start.o(.emb_text).
+.\_build\nrf51802_s130_bootloader.axf: Error: L6406E: No space in execution regions with .ANY selector matching nrf_log_backend_serial.o(i.timestamp_process).
+.\_build\nrf51802_s130_bootloader.axf: Error: L6406E: No space in execution regions with .ANY selector matching micro_ecc_lib_uECC.c.o(.text.uECC_vli_modAdd).
+.\_build\nrf51802_s130_bootloader.axf: Error: L6406E: No space in execution regions with .ANY selector matching dfu-cc.pb.o(.constdata).
+.\_build\nrf51802_s130_bootloader.axf: Error: L6406E: No space in execution regions with .ANY selector matching dfu-cc.pb.o(.constdata).
+.\_build\nrf51802_s130_bootloader.axf: Error: L6406E: No space in execution regions with .ANY selector matching app_timer.o(i.nrf_delay_us).
+.\_build\nrf51802_s130_bootloader.axf: Error: L6406E: No space in execution regions with .ANY selector matching nrf_log_frontend.o(i.nrf_log_frontend_hexdump).
+.\_build\nrf51802_s130_bootloader.axf: Error: L6406E: No space in execution regions with .ANY selector matching pb_common.o(i.pb_field_iter_find).
+.\_build\nrf51802_s130_bootloader.axf: Error: L6406E: No space in execution regions with .ANY selector matching nrf_nvmc.o(i.nrf_nvmc_page_erase).
+.\_build\nrf51802_s130_bootloader.axf: Error: L6406E: No space in execution regions with .ANY selector matching app_scheduler.o(i.app_sched_init).
+.\_build\nrf51802_s130_bootloader.axf: Error: L6406E: No space in execution regions with .ANY selector matching app_timer.o(i.app_timer_create).
+.\_build\nrf51802_s130_bootloader.axf: Error: L6406E: No space in execution regions with .ANY selector matching app_timer.o(i.user_op_alloc).
+.\_build\nrf51802_s130_bootloader.axf: Error: L6406E: No space in execution regions with .ANY selector matching app_util_platform.o(i.app_util_critical_region_exit).
+.\_build\nrf51802_s130_bootloader.axf: Error: L6406E: No space in execution regions with .ANY selector matching fstorage.o(i.queue_advance).
+.\_build\nrf51802_s130_bootloader.axf: Error: L6406E: No space in execution regions with .ANY selector matching nrf_log_backend_serial.o(i.serial_tx).
+.\_build\nrf51802_s130_bootloader.axf: Error: L6406E: No space in execution regions with .ANY selector matching pb_decode.o(i.iter_from_extension).
+.\_build\nrf51802_s130_bootloader.axf: Error: L6406E: No space in execution regions with .ANY selector matching printf8.o(i.__0snprintf$8).
+.\_build\nrf51802_s130_bootloader.axf: Error: L6406E: No space in execution regions with .ANY selector matching printf8.o(i._printf_pre_padding).
+.\_build\nrf51802_s130_bootloader.axf: Error: L6406E: No space in execution regions with .ANY selector matching nrf_crypto.o(i.nrf_crypto_verify).
+.\_build\nrf51802_s130_bootloader.axf: Error: L6406E: No space in execution regions with .ANY selector matching boards.o(i.bsp_board_leds_init).
+.\_build\nrf51802_s130_bootloader.axf: Error: L6406E: No space in execution regions with .ANY selector matching boards.o(i.nrf_gpio_cfg).
+.\_build\nrf51802_s130_bootloader.axf: Error: L6406E: No space in execution regions with .ANY selector matching nrf_ble_dfu.o(i.send_hvx).
+.\_build\nrf51802_s130_bootloader.axf: Error: L6406E: No space in execution regions with .ANY selector matching nrf_dfu_mbr.o(i.nrf_dfu_mbr_copy_sd).
+.\_build\nrf51802_s130_bootloader.axf: Error: L6406E: No space in execution regions with .ANY selector matching app_timer.o(i.app_timer_stop).
+.\_build\nrf51802_s130_bootloader.axf: Error: L6406E: No space in execution regions with .ANY selector matching softdevice_handler.o(i.softdevice_enable_get_default_config).
+.\_build\nrf51802_s130_bootloader.axf: Error: L6406E: No space in execution regions with .ANY selector matching pb_decode.o(i.pb_message_set_to_defaults).
+.\_build\nrf51802_s130_bootloader.axf: Error: L6406E: No space in execution regions with .ANY selector matching micro_ecc_lib_uECC.c.o(.text.uECC_vli_cmp_unsafe).
+.\_build\nrf51802_s130_bootloader.axf: Error: L6406E: No space in execution regions with .ANY selector matching micro_ecc_lib_uECC.c.o(.text.uECC_vli_modMult).
+.\_build\nrf51802_s130_bootloader.axf: Error: L6406E: No space in execution regions with .ANY selector matching dfu-cc.pb.o(.constdata).
+.\_build\nrf51802_s130_bootloader.axf: Error: L6406E: No space in execution regions with .ANY selector matching dfu-cc.pb.o(.constdata).
+.\_build\nrf51802_s130_bootloader.axf: Error: L6406E: No space in execution regions with .ANY selector matching nrf_log_backend_serial.o(i.nrf_log_backend_init).
+.\_build\nrf51802_s130_bootloader.axf: Error: L6406E: No space in execution regions with .ANY selector matching pb_decode.o(i.pb_decode_fixed32).
+.\_build\nrf51802_s130_bootloader.axf: Error: L6406E: No space in execution regions with .ANY selector matching pb_decode.o(.constdata).
+.\_build\nrf51802_s130_bootloader.axf: Error: L6406E: No space in execution regions with .ANY selector matching micro_ecc_lib_uECC.c.o(.text.uECC_vli_equal).
+.\_build\nrf51802_s130_bootloader.axf: Error: L6406E: No space in execution regions with .ANY selector matching micro_ecc_lib_uECC.c.o(.text.uECC_vli_modSub).
+.\_build\nrf51802_s130_bootloader.axf: Error: L6406E: No space in execution regions with .ANY selector matching memcpya.o(.text).
+.\_build\nrf51802_s130_bootloader.axf: Error: L6406E: No space in execution regions with .ANY selector matching memseta.o(.text).
+.\_build\nrf51802_s130_bootloader.axf: Error: L6406E: No space in execution regions with .ANY selector matching nrf_log_frontend.o(i.nrf_log_init).
+.\_build\nrf51802_s130_bootloader.axf: Error: L6406E: No space in execution regions with .ANY selector matching pb_common.o(i.pb_field_iter_begin).
+.\_build\nrf51802_s130_bootloader.axf: Error: L6406E: No space in execution regions with .ANY selector matching llushr.o(.text).
+.\_build\nrf51802_s130_bootloader.axf: Error: L6406E: No space in execution regions with .ANY selector matching app_timer.o(i.RTC1_IRQHandler).
+.\_build\nrf51802_s130_bootloader.axf: Error: L6406E: No space in execution regions with .ANY selector matching fstorage.o(i.check_config).
+.\_build\nrf51802_s130_bootloader.axf: Error: L6406E: No space in execution regions with .ANY selector matching softdevice_handler.o(i.SWI2_IRQHandler).
+.\_build\nrf51802_s130_bootloader.axf: Error: L6406E: No space in execution regions with .ANY selector matching pb_decode.o(i.decode_field).
+.\_build\nrf51802_s130_bootloader.axf: Error: L6406E: No space in execution regions with .ANY selector matching pb_decode.o(i.pb_readbyte).
+.\_build\nrf51802_s130_bootloader.axf: Error: L6406E: No space in execution regions with .ANY selector matching micro_ecc_lib_uECC.c.o(.text.uECC_vli_modMult_fast).
+.\_build\nrf51802_s130_bootloader.axf: Error: L6406E: No space in execution regions with .ANY selector matching micro_ecc_lib_uECC.c.o(.text.uECC_vli_modSquare_fast).
+.\_build\nrf51802_s130_bootloader.axf: Error: L6406E: No space in execution regions with .ANY selector matching llshl.o(.text).
+.\_build\nrf51802_s130_bootloader.axf: Error: L6406E: No space in execution regions with .ANY selector matching printf8.o(i._printf_post_padding).
+.\_build\nrf51802_s130_bootloader.axf: Error: L6406E: No space in execution regions with .ANY selector matching nrf_queue.o(i.nrf_queue_is_full).
+.\_build\nrf51802_s130_bootloader.axf: Error: L6406E: No space in execution regions with .ANY selector matching pb_decode.o(i.buf_read).
+.\_build\nrf51802_s130_bootloader.axf: Error: L6406E: No space in execution regions with .ANY selector matching micro_ecc_lib_uECC.c.o(.text.uECC_vli_isZero).
+.\_build\nrf51802_s130_bootloader.axf: Error: L6406E: No space in execution regions with .ANY selector matching micro_ecc_lib_uECC.c.o(.text.uECC_vli_rshift1).
+.\_build\nrf51802_s130_bootloader.axf: Error: L6406E: No space in execution regions with .ANY selector matching main.o(i.NVIC_SystemReset).
+.\_build\nrf51802_s130_bootloader.axf: Error: L6406E: No space in execution regions with .ANY selector matching ble_conn_params.o(i.is_conn_params_ok).
+.\_build\nrf51802_s130_bootloader.axf: Error: L6406E: No space in execution regions with .ANY selector matching nrf_dfu_mbr.o(i.nrf_dfu_mbr_compare).
+.\_build\nrf51802_s130_bootloader.axf: Error: L6406E: No space in execution regions with .ANY selector matching fstorage.o(i.queue_start).
+.\_build\nrf51802_s130_bootloader.axf: Error: L6406E: No space in execution regions with .ANY selector matching softdevice_handler.o(i.__sd_nvic_app_accessible_irq).
+.\_build\nrf51802_s130_bootloader.axf: Error: L6406E: No space in execution regions with .ANY selector matching pb_decode.o(i.pb_decode).
+.\_build\nrf51802_s130_bootloader.axf: Error: L6406E: No space in execution regions with .ANY selector matching dfu_req_handling.o(i.__ARM_common_switch8).
+.\_build\nrf51802_s130_bootloader.axf: Error: L6406E: No space in execution regions with .ANY selector matching nrf_log_frontend.o(i.nrf_log_frontend_std_5).
+.\_build\nrf51802_s130_bootloader.axf: Error: L6406E: No space in execution regions with .ANY selector matching memcmp.o(.text).
+.\_build\nrf51802_s130_bootloader.axf: Error: L6406E: No space in execution regions with .ANY selector matching dfu-cc.pb.o(.constdata).
+.\_build\nrf51802_s130_bootloader.axf: Error: L6406E: No space in execution regions with .ANY selector matching main.o(i.nrf_gpio_cfg_sense_input).
+.\_build\nrf51802_s130_bootloader.axf: Error: L6406E: No space in execution regions with .ANY selector matching boards.o(i.nrf_gpio_pin_write).
+.\_build\nrf51802_s130_bootloader.axf: Error: L6406E: No space in execution regions with .ANY selector matching nrf_dfu_mbr.o(i.nrf_dfu_mbr_init_sd).
+.\_build\nrf51802_s130_bootloader.axf: Error: L6406E: No space in execution regions with .ANY selector matching nrf_dfu_settings.o(i.dfu_settings_write_callback).
+.\_build\nrf51802_s130_bootloader.axf: Error: L6406E: No space in execution regions with .ANY selector matching nrf_dfu_utils.o(i.nrf_dfu_invalidate_bank).
+.\_build\nrf51802_s130_bootloader.axf: Error: L6406E: No space in execution regions with .ANY selector matching nrf_drv_rng.o(.constdata).
+.\_build\nrf51802_s130_bootloader.axf: Error: L6406E: No space in execution regions with .ANY selector matching app_timer_appsh.o(i.app_timer_evt_schedule).
+.\_build\nrf51802_s130_bootloader.axf: Error: L6406E: No space in execution regions with .ANY selector matching nrf_log_frontend.o(i.nrf_log_direct_feed).
+.\_build\nrf51802_s130_bootloader.axf: Error: L6406E: No space in execution regions with .ANY selector matching micro_ecc_lib_uECC.c.o(.text.uECC_vli_clear).
+.\_build\nrf51802_s130_bootloader.axf: Error: L6406E: No space in execution regions with .ANY selector matching micro_ecc_lib_uECC.c.o(.text.uECC_vli_set).
+.\_build\nrf51802_s130_bootloader.axf: Error: L6406E: No space in execution regions with .ANY selector matching app_timer_appsh.o(i.app_timer_evt_get).
+.\_build\nrf51802_s130_bootloader.axf: Error: L6406E: No space in execution regions with .ANY selector matching nrf_queue.o(i.queue_utilization_get).
+.\_build\nrf51802_s130_bootloader.axf: Error: L6406E: No space in execution regions with .ANY selector matching segger_rtt.o(i._GetAvailWriteSpace).
+.\_build\nrf51802_s130_bootloader.axf: Error: L6406E: No space in execution regions with .ANY selector matching printf8.o(i._snputc).
+.\_build\nrf51802_s130_bootloader.axf: Error: L6406E: No space in execution regions with .ANY selector matching boards.o(i.bsp_board_led_off).
+.\_build\nrf51802_s130_bootloader.axf: Error: L6406E: No space in execution regions with .ANY selector matching boards.o(i.bsp_board_led_on).
+.\_build\nrf51802_s130_bootloader.axf: Error: L6406E: No space in execution regions with .ANY selector matching nrf_ble_dfu.o(i.nrf_gpio_cfg_output).
+.\_build\nrf51802_s130_bootloader.axf: Error: L6406E: No space in execution regions with .ANY selector matching nrf_ble_dfu.o(.constdata).
+.\_build\nrf51802_s130_bootloader.axf: Error: L6406E: No space in execution regions with .ANY selector matching nrf_dfu_mbr.o(i.nrf_dfu_mbr_copy_bl).
+.\_build\nrf51802_s130_bootloader.axf: Error: L6406E: No space in execution regions with .ANY selector matching nrf_dfu_settings.o(i.nrf_dfu_settings_calculate_crc).
+.\_build\nrf51802_s130_bootloader.axf: Error: L6406E: No space in execution regions with .ANY selector matching nrf_drv_rng.o(i.nrf_drv_rng_stop).
+.\_build\nrf51802_s130_bootloader.axf: Error: L6406E: No space in execution regions with .ANY selector matching fstorage.o(i.fs_fake_init).
+.\_build\nrf51802_s130_bootloader.axf: Error: L6406E: No space in execution regions with .ANY selector matching fstorage.o(i.fs_queue_is_full).
+.\_build\nrf51802_s130_bootloader.axf: Error: L6406E: No space in execution regions with .ANY selector matching segger_rtt.o(i.SEGGER_RTT_Init).
+.\_build\nrf51802_s130_bootloader.axf: Error: L6406E: No space in execution regions with .ANY selector matching softdevice_handler.o(i.softdevice_ble_evt_handler_set).
+.\_build\nrf51802_s130_bootloader.axf: Error: L6406E: No space in execution regions with .ANY selector matching softdevice_handler.o(i.softdevice_sys_evt_handler_set).
+.\_build\nrf51802_s130_bootloader.axf: Error: L6406E: No space in execution regions with .ANY selector matching softdevice_handler_appsh.o(i.softdevice_evt_schedule).
+.\_build\nrf51802_s130_bootloader.axf: Error: L6406E: No space in execution regions with .ANY selector matching uread4.o(.text).
+.\_build\nrf51802_s130_bootloader.axf: Error: L6406E: No space in execution regions with .ANY selector matching boards.o(i.bsp_board_leds_off).
+.\_build\nrf51802_s130_bootloader.axf: Error: L6406E: No space in execution regions with .ANY selector matching nrf_ble_dfu.o(i.uint32_encode).
+.\_build\nrf51802_s130_bootloader.axf: Error: L6406E: No space in execution regions with .ANY selector matching nrf_log_backend_serial.o(i.buf_len_update).
+.\_build\nrf51802_s130_bootloader.axf: Error: L6406E: No space in execution regions with .ANY selector matching nrf_log_frontend.o(i.nrf_log_frontend_std_3).
+.\_build\nrf51802_s130_bootloader.axf: Error: L6406E: No space in execution regions with .ANY selector matching softdevice_handler_appsh.o(i.softdevice_evt_get).
+.\_build\nrf51802_s130_bootloader.axf: Error: L6406E: No space in execution regions with .ANY selector matching micro_ecc_lib_uECC.c.o(.text.uECC_vli_testBit).
+.\_build\nrf51802_s130_bootloader.axf: Error: L6406E: No space in execution regions with .ANY selector matching strcpy.o(.text).
+.\_build\nrf51802_s130_bootloader.axf: Error: L6406E: No space in execution regions with .ANY selector matching dfu_req_handling.o(i.dfu_data_write_handler).
+.\_build\nrf51802_s130_bootloader.axf: Error: L6406E: No space in execution regions with .ANY selector matching ble_conn_params.o(i.ble_conn_params_stop).
+.\_build\nrf51802_s130_bootloader.axf: Error: L6406E: No space in execution regions with .ANY selector matching nrf_ble_dfu.o(i.ble_evt_dispatch).
+.\_build\nrf51802_s130_bootloader.axf: Error: L6406E: No space in execution regions with .ANY selector matching nrf_ble_dfu.o(i.nrf_gpio_pin_set).
+.\_build\nrf51802_s130_bootloader.axf: Error: L6406E: No space in execution regions with .ANY selector matching nrf_dfu_flash.o(.constdata).
+.\_build\nrf51802_s130_bootloader.axf: Error: L6406E: No space in execution regions with .ANY selector matching app_timer.o(i.timer_list_handler_sched).
+.\_build\nrf51802_s130_bootloader.axf: Error: L6406E: No space in execution regions with .ANY selector matching nrf_log_frontend.o(i.nrf_log_frontend_std_2).
+.\_build\nrf51802_s130_bootloader.axf: Error: L6406E: No space in execution regions with .ANY selector matching softdevice_handler.o(i.ram_end_address_get).
+.\_build\nrf51802_s130_bootloader.axf: Error: L6406E: No space in execution regions with .ANY selector matching pb_decode.o(i.pb_istream_from_buffer).
+.\_build\nrf51802_s130_bootloader.axf: Error: L6406E: No space in execution regions with .ANY selector matching ble_srv_common.o(i.ble_srv_is_notification_enabled).
+.\_build\nrf51802_s130_bootloader.axf: Error: L6406E: No space in execution regions with .ANY selector matching nrf_queue.o(i.nrf_queue_next_idx).
+.\_build\nrf51802_s130_bootloader.axf: Error: L6406E: No space in execution regions with .ANY selector matching nrf_log_frontend.o(i.nrf_log_frontend_std_1).
+.\_build\nrf51802_s130_bootloader.axf: Error: L6406E: No space in execution regions with .ANY selector matching micro_ecc_lib_uECC.c.o(.text.bcopy).
+.\_build\nrf51802_s130_bootloader.axf: Error: L6406E: No space in execution regions with .ANY selector matching strlen.o(.text).
+.\_build\nrf51802_s130_bootloader.axf: Error: L6406E: No space in execution regions with .ANY selector matching ecc.o(i.is_word_aligned).
+.\_build\nrf51802_s130_bootloader.axf: Error: L6406E: No space in execution regions with .ANY selector matching nrf_log_frontend.o(i.nrf_log_frontend_std_0).
+.\_build\nrf51802_s130_bootloader.axf: Error: L6406E: No space in execution regions with .ANY selector matching nrf_log_frontend.o(i.nrf_log_handlers_set).
+.\_build\nrf51802_s130_bootloader.axf: Error: L6406E: No space in execution regions with .ANY selector matching softdevice_handler.o(i.softdevice_handler_is_enabled).
+.\_build\nrf51802_s130_bootloader.axf: Error: L6406E: No space in execution regions with .ANY selector matching boards.o(.constdata).
+.\_build\nrf51802_s130_bootloader.axf: Error: L6406E: No space in execution regions with .ANY selector matching pb_decode.o(i.pb_dec_fixed32).
+.\_build\nrf51802_s130_bootloader.axf: Error: L6406E: No space in execution regions with .ANY selector matching pb_decode.o(i.pb_dec_fixed64).
+.\_build\nrf51802_s130_bootloader.axf: Error: L6406E: No space in execution regions with .ANY selector matching dfu_req_handling.o(.constdata).
+.\_build\nrf51802_s130_bootloader.axf: Error: L6406E: No space in execution regions with .ANY selector matching nrf_ble_dfu.o(i.conn_params_error_handler).
+.\_build\nrf51802_s130_bootloader.axf: Error: L6406E: No space in execution regions with .ANY selector matching nrf_ble_dfu.o(dfu_trans).
+.\_build\nrf51802_s130_bootloader.axf: Error: L6406E: No space in execution regions with .ANY selector matching nrf_dfu.o(i.nrf_dfu_wait).
+.\_build\nrf51802_s130_bootloader.axf: Error: L6406E: No space in execution regions with .ANY selector matching app_timer.o(i.SWI0_IRQHandler).
+.\_build\nrf51802_s130_bootloader.axf: Error: L6406E: No space in execution regions with .ANY selector matching nrf_log_backend_serial.o(i.nrf_log_backend_hexdump_handler_get).
+.\_build\nrf51802_s130_bootloader.axf: Error: L6406E: No space in execution regions with .ANY selector matching nrf_log_backend_serial.o(i.nrf_log_backend_std_handler_get).
+.\_build\nrf51802_s130_bootloader.axf: Error: L6406E: No space in execution regions with .ANY selector matching softdevice_handler.o(i.softdevice_fault_handler).
+.\_build\nrf51802_s130_bootloader.axf: Error: L6406E: No space in execution regions with .ANY selector matching micro_ecc_lib_uECC.c.o(.text.uECC_secp256r1).
+.\_build\nrf51802_s130_bootloader.axf: Error: L6406E: No space in execution regions with .ANY selector matching ctype_o.o(.text).
+.\_build\nrf51802_s130_bootloader.axf: Error: L6406E: No space in execution regions with .ANY selector matching ble_conn_params.o(.constdata).
+.\_build\nrf51802_s130_bootloader.axf: Error: L6406E: No space in execution regions with .ANY selector matching ctype_o.o(.constdata).
+.\_build\nrf51802_s130_bootloader.axf: Error: L6406E: No space in execution regions with .ANY selector matching dfu-cc.pb.o(.constdata).
+.\_build\nrf51802_s130_bootloader.axf: Error: L6407E: Sections of aggregate size 0x2804 bytes could not fit into .ANY selector(s).
+Not enough information to list image symbols.
+Not enough information to list the image map.
+Finished: 2 information, 0 warning and 214 error messages.
+".\_build\nrf51802_s130_bootloader.axf" - 214 Error(s), 3 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: ARM
+                http://www.keil.com/pack/ARM.CMSIS.4.5.0.pack
+                ARM::CMSIS:CORE:4.3.0
+                CMSIS (Cortex Microcontroller Software Interface Standard)
+   * Component: CORE Version: 4.3.0
+
+Package Vendor: NordicSemiconductor
+                http://developer.nordicsemi.com/nRF5_SDK/pieces/nRF_DeviceFamilyPack/NordicSemiconductor.nRF_DeviceFamilyPack.8.11.1.pack
+                NordicSemiconductor::Device:Startup:8.11.1
+                Nordic Semiconductor nRF ARM devices Device Family Pack.
+   * Component: Startup Version: 8.11.1
+
+<h2>Collection of Component include folders:</h2>
+  Z:\VSN_workspace\dual_mode_mouse\nRF5_SDK_12.3.0_d7731ad\nRF5_SDK_12.3.0_d7731ad\examples\dfu\bootloader_secure\pca10028_debug\arm5_no_packs\RTE
+  D:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include
+  D:\Keil_v5\ARM\PACK\NordicSemiconductor\nRF_DeviceFamilyPack\8.11.1\Device\Include
+  D:\Keil_v5\ARM\PACK\NordicSemiconductor\nRF_DeviceFamilyPack\8.16.0\Device\Include
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: ARM::CMSIS:CORE:4.3.0
+
+   * Component: NordicSemiconductor::Device:Startup:8.11.1
+      Source file:   Device\Source\arm\arm_startup_nrf51.s
+      Source file:   Device\Source\system_nrf51.c
+      Include file:  Device\Include\system_nrf51.h
+Target not created.

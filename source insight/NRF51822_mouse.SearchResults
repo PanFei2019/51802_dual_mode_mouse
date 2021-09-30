@@ -1,0 +1,3 @@
+---- UES_INTERNAL_RC_CLOCK Matches (2 in 2 files) ----
+Configuration.h (f:\nordic\51822\nrf5_sdk_12.3.0_d7731ad\nrf5_sdk_12.3.0_d7731ad\examples\ble_peripheral\ble_app_hids_mouse):#define UES_INTERNAL_RC_CLOCK 1
+Pca10028.h (f:\nordic\51822\nrf5_sdk_12.3.0_d7731ad\nrf5_sdk_12.3.0_d7731ad\components\boards):#if !UES_INTERNAL_RC_CLOCK
