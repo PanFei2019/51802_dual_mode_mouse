@@ -297,7 +297,8 @@ enum
 {
 	key_event    = 0x01,
 	motion_event = 0x02,
-	scroll_event = 0x04
+	scroll_event = 0x04,
+	touch_event  = 0x08
 };
 
 uint8_t active_event = 0;
@@ -5489,6 +5490,9 @@ void enter_pairing_mode(void)
 
 int enter_normal_mode(void)
 {
+	#if TOUCH_PTP_ENABLED
+	uint8_t *p_digitizer_report;
+	#endif
 	uint8_t BDaddrEncryptData[6];
 	uint8_t BDaddrData[6];
 	int16_t motion_x, motion_y;
@@ -5702,6 +5706,12 @@ int enter_normal_mode(void)
 	tx_payload.data[7] = my_device_addr.addr[0];//0x15;//rf_address_mouse1;
 	tx_payload.data[8] = my_device_addr.addr[1];//0x9C;//rf_address_mouse2;
 	tx_payload.length = 9;
+
+	#if TOUCH_PTP_ENABLED
+	p_digitizer_report = (uint8_t *)&digitizer_report;
+	memcpy(&tx_payload.data[9], p_digitizer_report, sizeof(digitizer_report_t));
+	tx_payload.length = 9+sizeof(digitizer_report_t);
+	#endif
 	
 	m_TX_SUCCESS = true;
 	tx_payload.noack = true;//false;//
@@ -6166,6 +6176,11 @@ int enter_normal_mode(void)
 					nrf_drv_rtc_counter_clear(&rtc);
 				}
 				#endif
+			}
+			
+			if(active_event&touch_event)
+			{
+				active_event &= ~touch_event;
 			}
 			
 			while(1)
@@ -6753,7 +6768,7 @@ else
 		work_mode=RF_2_point_4_mode;
 	}
 #else
-	work_mode=BT_mode;
+	work_mode=RF_2_point_4_mode;//BT_mode;
 #endif
 #endif //
 #endif//end AUTO_DETECT_2P4G
@@ -7290,7 +7305,7 @@ else
 				{
 					if((uint8_t)*(flash_addr+k)!=0xFF) break;
 				}
-				if(k<6)
+				if(1)//(k<6)
 				{
 					Authorization = true;
 					#if 1
