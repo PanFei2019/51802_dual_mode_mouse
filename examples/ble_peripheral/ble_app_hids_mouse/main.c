@@ -5708,9 +5708,11 @@ int enter_normal_mode(void)
 	tx_payload.length = 9;
 
 	#if TOUCH_PTP_ENABLED
+	tx_payload.data[9] = 0;
+	tx_payload.data[10] = 0;
 	p_digitizer_report = (uint8_t *)&digitizer_report;
-	memcpy(&tx_payload.data[9], p_digitizer_report, sizeof(digitizer_report_t));
-	tx_payload.length = 9+sizeof(digitizer_report_t);
+	memcpy(&tx_payload.data[11], p_digitizer_report, sizeof(digitizer_report_t));
+	tx_payload.length = 11+sizeof(digitizer_report_t);
 	#endif
 	
 	m_TX_SUCCESS = true;
@@ -6142,6 +6144,10 @@ int enter_normal_mode(void)
 			sleep_time_cnt = 0;
 			if(active_event&key_event)
 			{
+				#if TOUCH_PTP_ENABLED
+				tx_payload.data[9] = 1;
+				tx_payload.data[10] = 1;
+				#endif
 				#if 0
 				if(read_buf_index>=5)
 				{
@@ -6178,10 +6184,13 @@ int enter_normal_mode(void)
 				#endif
 			}
 			
+			#if TOUCH_PTP_ENABLED
 			if(active_event&touch_event)
 			{
+				tx_payload.data[10] = 1;
 				active_event &= ~touch_event;
 			}
+			#endif
 			
 			while(1)
 			{					
@@ -7549,7 +7558,7 @@ else
 				#if 1//!AUTO_DETECT_2P4G
 				enable_spi();
 				m_spi_is_enable = true;
-				if(readReg(0x00)==0x58)
+				if(readReg(0x00)==0x58||readReg(0x01)==0x30)//KA5857,PAW3205(abnormal)
 				{
 					nrf_drv_spi_uninit(&spi);
 					if(USING_HW_SPI)
@@ -7563,7 +7572,7 @@ else
 						APP_ERROR_CHECK(nrf_drv_spi_init(&spi, &spi_config, spi_event_handler));
 					}
 					m_spi_is_enable = true;
-				}			
+				}		
 				turnOn();
 				m_motion_sensor_is_enable = true;
 				#endif
